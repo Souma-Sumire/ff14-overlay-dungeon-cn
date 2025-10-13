@@ -4,6 +4,7 @@ const HoH = [770, 771, 772, 782, 773, 783, 774, 784, 775, 785]//780
 const PotD = [561, 562, 563, 564, 565, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607]//570
 
 function GetZoneKeyById(id) {
+    if (PT.includes(id)) return 'PT'
     if (EO.includes(id)) return 'EO'
     if (HoH.includes(id)) return 'HoH'
     if (PotD.includes(id)) return 'PotD'
